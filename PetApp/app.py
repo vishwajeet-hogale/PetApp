@@ -6,7 +6,7 @@ app=Flask(__name__)
 # Mysql Connection
 app.config['MYSQL_HOST'] = 'localhost' 
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Mysteriousman307'
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'petclinic'
 mysql = MySQL(app)
 
