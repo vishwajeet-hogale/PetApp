@@ -1,0 +1,14 @@
+body{
+  background: rgb(147, 119, 172);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(112, 108, 121), rgb(94, 93, 86));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(101, 98, 107), rgb(91, 75, 105)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+  .active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+    
+
+  }

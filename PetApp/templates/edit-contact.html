@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <div class="row">
+
+    <div class="col-md-4 offset-md-4">
+      <div style="text-align: center;color: azure;font-size: 40px;font-weight: 800;margin-bottom: 20px;">
+        Update your record here
+      </div>
+      <div class="card card-body" style="margin-bottom:20px;">
+        <form action="/update/{{pet.6}}" method="POST">
+          <div class="form-group">
+            <label><b>Pet ID</b></label>
+            <input type="text" name="petid" value="{{pet.0}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label><b>Name</b></label>
+            <input type="text" name="Name" value="{{pet.1}}" class="form-control">
+          </div>
+         
+          <div class="form-group">
+            <label><b>Kind</b></label>
+            <input type="text" name="Kind" value="{{pet.2}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label><b>Gender</b></label>
+            <input type="text" name="Gender" value="{{pet.3}}" class="form-control">
+          </div>
+          <div class="form-group">
+            <label><b>Age</b></label>
+            <input type="text" name="Age" value="{{pet.4}}" class="form-control">
+          </div>
+          <!--<div class="form-group">
+            <label><b>OwnerID</b></label>
+            <input type="text" name="OwnerID" value="{{pet.5}}" class="form-control">
+          </div> -->
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">
+              Update
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

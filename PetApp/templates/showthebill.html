@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="row">
+<div class="col-md-7" style="margin-left: 80px;">
+    <div style="text-align: center;color: azure;font-size: 30px;font-weight: 500;margin-bottom: 20px;margin-top: 30px;">
+      Recently entered records
+    </div>
+    <table class="table table-striped table-hover table-bordered table-sm bg-white">
+      <thead>
+        <tr>
+          <td>Pet ID</td>
+          <td>Pet Name</td>
+          <td>Procedure Type</td>
+          <td>Procedure code</td>
+          <td>Price</td>
+          <td>OwnerID</td>
+          <td>Date</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in pets %}
+        <tr>
+          <td>{{p.0}}</td>
+          <td>{{p.1}}</td>
+          <td>{{p.2}}</td>
+          <td>{{p.3}}</td>
+          <td>Rs {{p.4}}</td>
+          <td>{{p.5}}</td>
+          <td>{{p.6}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</div>
+<div class="col-md-7">
+    <div style="text-align: center;color: azure;font-size: 40px;font-weight: 800;margin-bottom: 20px;">
+        <h2>The total bill for today is <h1>Rs {{data.0}}/- only</h1></h2>
+    </div>
+</div>
+</div>
+{% endblock %}

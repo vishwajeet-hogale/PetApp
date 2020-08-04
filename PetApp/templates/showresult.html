@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="row">
+    <div class="col-md-7" style="margin-left: 80px;">
+        <div style="text-align: center;color: azure;font-size: 30px;font-weight: 500;margin-bottom: 20px;margin-top: 30px;">
+          Result
+        </div>
+        <table class="table table-striped table-hover table-bordered table-sm bg-white">
+          
+          <tbody>
+            {% for p in pets %}
+            <tr>
+            {% for i in p %}
+            
+              <td>{{i}}</td>
+            {% endfor %} 
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+</div>
+{% endblock %}
